@@ -64,7 +64,32 @@ body {
 .down>a {
 	color: #fff;
 }
+.range input {
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 2px;
+	padding-left: 1px;
+	width: auto;
+	height: 16px;
+	outline: 0;
+	background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#ccc),color-stop(100%,#ccc)) center no-repeat;
+	background: linear-gradient(to right,#ccc 0,#ccc 100%) center no-repeat;
+	background-size: 99% 2px;
+	-webkit-appearance: none
+}
 
+.range input::-webkit-slider-thumb {
+	position: relative;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 2px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2);
+	cursor: pointer;
+	-webkit-appearance: none;
+	border: 0
+}
 a {
 	color: #000;
 	text-decoration: none;
