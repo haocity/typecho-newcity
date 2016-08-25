@@ -1,4 +1,10 @@
+html {
+    height: 100%;
+}
 body {
+	position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -221,7 +227,7 @@ textarea {
 
 .container {
 	margin-left: 20%;
-	min-height: 700px;
+	
 }
 
 .container-main {
@@ -477,8 +483,11 @@ textarea {
 }
 
 #footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
 	margin-left: 20%;
-	margin-top: 50px;
+	width: 80%;
 	background-color: rgba(238, 238, 238, 0.8);
 	line-height: 40px;
 	text-align: center;
@@ -487,9 +496,11 @@ textarea {
 
 .error-page {
 	margin-top: 100px;
-	margin-bottom: 100px;
-}
 
+}
+.post-wrap{
+	margin-bottom: 130px;
+}
 .post-content,.comment-content {
 	line-height: 1.5;
 	word-wrap: break-word;

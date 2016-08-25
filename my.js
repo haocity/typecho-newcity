@@ -43,24 +43,23 @@ Bcookie.oneimg=getCookie("oneimg");
     	document.cookie="oneimg="+Bcookie.oneimg+";path=/"; 
     	Bcookie.bgcolorswitch="false";
     	document.cookie="bgcolorswitch="+Bcookie.bgcolorswitch+";path=/";
-}
+	}
 
-//console.log("执行状态");
+	//console.log("执行状态");
 	document.getElementById("hcsetrange").value=Bcookie.postbg;
 	hcchangerrange();
-	document.getElementById("hccolor").value=Bcookie.bgcolor;
-	
-	if(Bcookie.bgcolorswitch=="true") {
-	document.getElementById("hccolorswitch").checked=true;
-	hcchangercolor();
-	}
-	
 	//判断页面宽度 手机版不显示透明度
 	if(document.body.clientWidth<=767)
 	{
 		document.getElementById("hctmd").style.display='none'
 	}
-
+	
+	document.getElementById("hccolor").value=Bcookie.bgcolor;
+	if(Bcookie.bgcolorswitch=="true") {
+	document.getElementById("hccolorswitch").checked=true;
+	hcchangercolor();
+	}
+	
 else {
 //console.log("加载一图图片");
 		Bcookie.url = "https://t4.haotown.cn/img/bj@" + Bcookie.oneimg + ".jpg";
