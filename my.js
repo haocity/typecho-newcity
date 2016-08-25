@@ -48,10 +48,10 @@ Bcookie.oneimg=getCookie("oneimg");
 	//console.log("执行状态");
 	document.getElementById("hcsetrange").value=Bcookie.postbg;
 	hcchangerrange();
-	//判断页面宽度 手机版不显示透明度
+	//判断页面宽度 手机版使用定时方式调整透明度
 	if(document.body.clientWidth<=767)
 	{
-		document.getElementById("hctmd").style.display='none'
+		setInterval('hcchangerrange()',300)
 	}
 	
 	document.getElementById("hccolor").value=Bcookie.bgcolor;
