@@ -35,7 +35,7 @@
         <div id="oneimgmenu">
         	 <div class="hcset">
 			     <p><input type="checkbox" id="hccolorswitch" onclick="hcswitch()" >背景颜色<input type="color" id="hccolor" value="#ffffff" /> </p>
-			     <p id='hctmd'>透明度 <input type="range" name="points" min="0" max="100"  id="hcsetrange" onmouseup="hcchangerrange()"style="width: 70px;"/> </p>
+			     <p id='hctmd' class="range">透明度 <input type="range" name="points" min="0" max="100"  id="hcsetrange" onmouseup="hcchangerrange()" onmouseout="hcchangerrange()" style="width: 70px;"/> </p>
       		 </div>
             <img src="<?php $this->options->themeUrl('img/imgdown.png'); ?>" title="下载/评论图片" style="width: 70px;"   onclick="DownImg()">    
 			<img src="<?php $this->options->themeUrl('img/imgchanger.png'); ?>" title="更换图片" style="width: 70px;" onclick="ChangerImg()"> 
