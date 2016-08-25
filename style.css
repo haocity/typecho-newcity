@@ -495,7 +495,9 @@ textarea {
 }
 
 .error-page {
-	margin-top: 100px;
+	margin: 80px 0px;
+	padding: 20px 10px;
+	background-color: rgba(255, 255, 255, 0.74);
 
 }
 .post-wrap{
@@ -617,6 +619,9 @@ img.alignright {
 		margin: 0px;
 		padding: 0px;
 	}
+	.post-wrap {
+		margin-bottom: 0px;
+	}
 
 	.post {
 		border-radius: 0px;
@@ -625,6 +630,8 @@ img.alignright {
 
 	#footer {
 		margin-left: 0px;
+		width: 100%;
+		position: relative;
 	}
 	.hcset{
 		padding-top: 3px;
