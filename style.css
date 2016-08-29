@@ -51,11 +51,11 @@ body {
 
 
 .down {
+	display: inline;
 	background-color: #b13c3c;
 	padding: 5px 10px;
 	border-radius: 5px;
 	text-align: center;
-	width: 100px;
 	color: #fff;
 	border-radius: 5px;
 	box-shadow: 1px 1px 5px #b5b5b5;
