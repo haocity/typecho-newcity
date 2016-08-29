@@ -15,7 +15,23 @@ body {
 	padding: 0px;
 	margin: 0px;
 }
-
+.color-warp{
+	overflow: hidden;
+	width: 150px;
+	margin: 0px auto;
+}
+.color{
+	background-color: #fff;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 4px;
+	float: left;
+	   cursor: pointer;
+}
+.color-main{
+	width: 10px;
+	height: 10px;
+}
 ::-webkit-scrollbar {
 	width: 12px;
 	background: rgba(58, 57, 56, 0.2);
@@ -25,72 +41,6 @@ body {
 	background: rgba(58, 57, 56, 0.62);
 }
 
-#oneimg {
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.changerimg {
-	position: fixed;
-	right: 5px;
-	bottom: 20px;
-	z-index: 6;
-	cursor: pointer;
-}
-
-#oneimgmenu {
-	display: none;
-	background-color: rgba(255, 253, 253, 0.34);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff,endColorstr=#66ffffff);
-	border-radius: 8px;
-}
-
-.hcset {
-	padding: 15px 0 0 10px;
-}
-
-
-.down {
-	background-color: #b13c3c;
-	padding: 5px 10px;
-	border-radius: 5px;
-	text-align: center;
-	width: 100px;
-	color: #fff;
-	border-radius: 5px;
-	box-shadow: 1px 1px 5px #b5b5b5;
-	margin: 10px 5px;
-}
-
-.down>a {
-	color: #fff;
-}
-.range input {
-	overflow: hidden;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	padding-right: 2px;
-	padding-left: 1px;
-	width: auto;
-	height: 16px;
-	outline: 0;
-	background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#ccc),color-stop(100%,#ccc)) center no-repeat;
-	background: linear-gradient(to right,#ccc 0,#ccc 100%) center no-repeat;
-	background-size: 99% 2px;
-	-webkit-appearance: none
-}
-
-.range input::-webkit-slider-thumb {
-	position: relative;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background-color: #fff;
-	box-shadow: 0 0 2px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2);
-	cursor: pointer;
-	-webkit-appearance: none;
-	border: 0
-}
 a {
 	color: #000;
 	text-decoration: none;
@@ -415,6 +365,7 @@ textarea {
 	padding: 14px;
 	margin-top: 10px;
 	border: 1px solid #EEE;
+	background-color: rgba(238, 238, 238, 0.7);
 }
 
 .comment-list li.comment-level-odd {
@@ -540,6 +491,8 @@ textarea {
 	background-color: rgba(255, 255, 255, 0.74);
 
 }
+.post{background-color:rgba(255, 255, 255, 0.45);}
+#comments {background-color: rgba(255, 255, 255, 0.45);}
 .post-wrap{
 	margin-bottom: 130px;
 }
@@ -673,8 +626,7 @@ img.alignright {
 		width: 100%;
 		position: relative;
 	}
-	.hcset{
-		padding-top: 3px;
-	}
+	
 }
 
+	

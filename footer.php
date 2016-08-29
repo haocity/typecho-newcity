@@ -16,7 +16,9 @@
          	<!--<a class="iconfont icon-weixin" target="_blank"  href="#"></a> </li>-->
          	
          </div>
+         	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
 </footer>
+
 <script src="<?php $this->options->themeUrl('nav.js'); ?>" type="text/javascript" charset="utf-8"></script>
 <?php $this->footer(); ?>
 </body>
