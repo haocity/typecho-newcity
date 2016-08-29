@@ -40,7 +40,21 @@ body {
 ::-webkit-scrollbar-thumb {
 	background: rgba(58, 57, 56, 0.62);
 }
+.down {
+	display: inline;
+	background-color: #b13c3c;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px #b5b5b5;
+	margin: 10px 5px;
+}
 
+.down>a {
+	color: #fff;
+}
 a {
 	color: #000;
 	text-decoration: none;
