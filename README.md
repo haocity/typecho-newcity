@@ -1,5 +1,5 @@
 # newcity
  typecho  theme
  
- brance: master  (include oneimg)
-		 noimg    (on oneimg,only hava color)
+ brance: master  (include oneimg)<br>
+	noimg    (on oneimg,only hava color)
