@@ -6,6 +6,15 @@ for (Bcookie.i=0;Bcookie.i<Bcookie.arr.length;Bcookie.i++) {
 }
 
 document.write("</div>");
+
+Bcookie.bgcolor=getCookie("bgcolor");
+if(Bcookie.bgcolor==""){
+Bcookie.bgcolor=Bcookie.arr[0];
+document.cookie="bgcolor="+Bcookie.bgcolor+";path=/";
+}
+    
+	hcchangercolor(Bcookie.bgcolor);
+
 function getCookie(Name) {
 	var cookieName = encodeURIComponent(Name) + "=",  
         returnvalue = "",
@@ -22,16 +31,7 @@ returnvalue=decodeURIComponent(document.cookie.substring(cookieStart+cookieName.
 
 return returnvalue;
 }
-window.onload=function() {
-    Bcookie.bgcolor=getCookie("bgcolor");
-    if(Bcookie.bgcolor==""){
-    	//console.log("没找到cookie")
-		Bcookie.bgcolor==Bcookie.arr[0];
-    	document.cookie="bgcolor="+Bcookie.bgcolor+";path=/";
-	}
-    
-	hcchangercolor(Bcookie.bgcolor);
-}
+
 function hcchangercolor(color) {
 	Bcookie.bgcolor=color;
    	document.body.style.backgroundColor=Bcookie.bgcolor;
