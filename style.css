@@ -338,7 +338,10 @@ textarea {
 
 .page-navigator {
 	list-style: none;
-	margin: 25px 0;
+	width: 300px;
+	margin: 0px auto;
+	border-radius: 4px;
+	background-color: rgba(238, 238, 238, 0.55);
 	padding: 0;
 	text-align: center;
 }
