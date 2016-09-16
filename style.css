@@ -12,8 +12,8 @@ body {
 	font-family: "Droid Serif",Georgia,"Times New Roman","PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",serif;
 	font-size: 87.5%;
 	background-color: #fff;
-	padding: 0px;
-	margin: 0px;
+	padding: 0 0 84px 0;
+	margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -102,8 +102,8 @@ a:hover,a:active {
 }
 
 ul,li {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 
 pre,code {
@@ -170,8 +170,8 @@ textarea {
 /*head*/
 .blog-left {
 	position: fixed;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 20%;
 	background-color: rgba(58, 57, 56, 0.62);
@@ -544,9 +544,7 @@ textarea {
 	background-color: rgba(255, 255, 255, 0.74);
 
 }
-.post-wrap{
-	margin-bottom: 130px;
-}
+
 .post-content,.comment-content {
 	line-height: 1.5;
 	word-wrap: break-word;
