@@ -177,6 +177,9 @@ textarea {
 .leftblog-menu >li:hover {
 	background-color: #959090;
 }
+.leftblog-menu a{
+	display:block;
+}
 
 .leftnav>.leftblog-menubar {
 	display: none;
