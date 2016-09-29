@@ -625,6 +625,9 @@ img.alignright {
 }
 
 @media(max-width:767px) {
+	body{
+	padding:0;
+	}
 	.blog-left {
 		float: none;
 		position: static;
