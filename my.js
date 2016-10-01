@@ -35,11 +35,11 @@ Bcookie.oneimg=getCookie("oneimg");
 
     if(Bcookie.oneimg==""){
     	//console.log("没找到cookie")
-    	Bcookie.postbg=45;
+    	Bcookie.postbg=70;
     	document.cookie="postbg="+Bcookie.postbg+";path=/"; 
     	Bcookie.bgcolor = document.getElementById("hccolor").value;
     	document.cookie="bgcolor="+Bcookie.bgcolor+";path=/"; 
-    	Bcookie.oneimg=718;
+    	Bcookie.oneimg=1728;
     	document.cookie="oneimg="+Bcookie.oneimg+";path=/"; 
     	Bcookie.bgcolorswitch="false";
     	document.cookie="bgcolorswitch="+Bcookie.bgcolorswitch+";path=/";
@@ -118,6 +118,16 @@ else {
 		
 }
 	
+console.log("主题：NEWCITY 作者 疯狂减肥带 https://github.com/haocity/typecho-newcity/tree/master");
 	
-	
-
+function pajx_loadDuodsuo(){
+	var dus=$(".ds-thread");
+	if($(dus).length==1){
+		var el = document.createElement('div');
+		el.setAttribute('data-thread-key',$(dus).attr("data-thread-key"));//必选参数
+		el.setAttribute('data-url',$(dus).attr("data-url"));
+		DUOSHUO.EmbedThread(el);
+		$(dus).html(el);
+		
+	}
+}
