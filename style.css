@@ -9,7 +9,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: #444;
-	font-family: "Droid Serif",Georgia,"Times New Roman","PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",serif;
+	font-family: Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif;
 	font-size: 87.5%;
 	background-color: #fff;
 	padding: 0 0 84px 0;
@@ -150,7 +150,7 @@ table th {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: "Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
+	font-family: Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif;
 }
 
 input[type="text"],input[type="email"],input[type="url"],input[type="password"],textarea {
@@ -213,9 +213,6 @@ textarea {
 .leftblog-menu >li:hover {
 	background-color: #959090;
 }
-.leftblog-menu a {
-    display: block;
-}
 
 .leftnav>.leftblog-menubar {
 	display: none;
@@ -230,11 +227,13 @@ textarea {
 	margin: 5px 5px;
 	background-color: #fff;
 }
-
+.leftblog-menu a{
+	display: block;
+}
 .search-form {
 	height: 80%;
 	width: 220px;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 .search-form #s {
@@ -274,7 +273,7 @@ textarea {
 }
 
 .container-main {
-	margin: 20px 5% 0px 5%;
+	margin: 20px 5% 0 5%;
 	padding: 5px 5% 5px 5%;
 }
 /*main-end*/
@@ -346,13 +345,21 @@ textarea {
 	list-style: none;
 	margin: 30px 0;
 	padding: 0;
-	color: #999;
+	color: #e4e4e4;
 }
 
-.post-near li {
-	margin: 10px 0;
+.post-near>.near{
+	display: inline-block;
+    background-color: rgb(80, 75, 75);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
-
+.post-near>.near-two{
+	float: right;
+}
+.post-near>.near>a{
+	color: #fff;
+}
 .archive-title {
 	position: relative;
 	top: -20px;
@@ -377,13 +384,11 @@ textarea {
 
 .page-navigator {
 	list-style: none;
+	margin: 25px 0;
 	padding: 0;
 	text-align: center;
-	width: 300px;
-	margin: 0px auto;
-	background-color: rgba(238, 238, 238, 0.55);
-	border-radius: 4px;
-
+	background-color: rgba(238, 238, 238, 0.7);
+        border-radius: 6px;
 }
 
 .page-navigator li {
@@ -623,10 +628,14 @@ img.alignright {
 .invisible {
 	visibility: hidden;
 }
-
+@media (min-width:767px) {
+	.leftblog-menu{
+		display: block !important;
+	}
+}
 @media(max-width:767px) {
 	body{
-	padding:0;
+	    padding:0;
 	}
 	.blog-left {
 		float: none;
