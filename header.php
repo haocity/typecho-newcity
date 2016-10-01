@@ -1,4 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+<?php if (!is_pjax()) { ?>
 <!DOCTYPE HTML>
 <html class="no-js">
 <head>
@@ -15,10 +16,12 @@
 
     <!-- 使用url函数转换相关路径 -->
 
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
+     <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
     <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
    	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
+<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="<?php $this->options->themeUrl('jquery.pjax.js'); ?>" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -70,7 +73,7 @@
           </aside>
           
          <nav class="leftnav">
-         	<div class="leftblog-menubar" onclick="hidennav()">
+         	<div class="leftblog-menubar" onclick='$(".leftblog-menu").slideToggle("slow")'>
          		<div class="bar1"></div>
          		<div class="bar1"></div>
          		<div class="bar1"></div>
@@ -86,6 +89,7 @@
 <?php endwhile; ?>
 
 </li>
+
 <!--页面菜单-->     
  <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
           <?php while($pages->next()): ?>
@@ -97,8 +101,9 @@
 
 	</header>
 
-<div class="container-warp" >
-    <div class="container">
+<div class="container-warp" id="container" >
+<?php } ?>
+    <div class="container" >
         <div class="container-main">
 
     
