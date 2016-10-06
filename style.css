@@ -96,7 +96,7 @@ a {
 	text-decoration: none;
 	position: relative;
 }
-
+a:focus{outline:none}
 a:hover,a:active {
 	left: 3px;
 }
