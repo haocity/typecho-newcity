@@ -15,7 +15,7 @@ body {
 	padding: 0 0 84px 0;
 	margin: 0;
 }
-
+::selection{background: rgba(58, 57, 56, 0.2)}
 ::-webkit-scrollbar {
 	width: 12px;
 	background: rgba(58, 57, 56, 0.2);
