@@ -3,7 +3,7 @@
         </div><!-- end .row -->
     </div>
 </div><!-- end #body -->
-
+<?php if (!is_pjax()) { ?>
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
     <?php _e('源自<a href="http://www.typecho.org">Typecho</a>Theme<a href="http://www.haotown.cn">HAOTOWN</a> 鲁ICP备15029864号'); ?>.
@@ -17,20 +17,22 @@
          	
          </div>
 </footer>
-<?php $this->footer(); ?>
-	<script type="text/javascript">
- $(document).pjax('a:not([nopjax])',   //jquery选择器，监听a元素，触发pjax。
+<script>
+ $(document).pjax('a:not([nopjax])',   //jquery选择器，监听所有不含nopjax属性的a元素，触发pjax。
  '#container',                         //jquery选择器，存放页面内容的元素。
  {scrollTo:false,                      //动作完成后不滚动
  timeout:30000}); 
 $(document).on('pjax:send', function() {
-console.log('发送ajax请求')
+console.log('发送ajax请求');$('.cssload-fond').show();
  });
  $(document).on('pjax:complete', function() {
-pajx_loadDuodsuo()
+$('.cssload-fond').hide();
+pajx_loadDuodsuo();
  
  });
+</script>
+<?php $this->footer(); ?>
 
-	</script>
 </body>
 </html>
+<?php } ?>
