@@ -18,7 +18,7 @@
          </div>
 </footer>
 <script>
- $(document).pjax('a:not([nopjax])',   //jquery选择器，监听所有不含nopjax属性的a元素，触发pjax。
+ $(document).pjax('a[target!=_blank]:not([nopjax])',   //jquery选择器，监听所有不含nopjax属性的a元素，触发pjax。
  '#container',                         //jquery选择器，存放页面内容的元素。
  {scrollTo:false,                      //动作完成后不滚动
  timeout:30000}); 
