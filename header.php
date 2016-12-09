@@ -1,28 +1,28 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <?php if (!is_pjax()) { ?>
 <!DOCTYPE HTML>
-<html class="no-js">
+<html class="no-js" lang="zh-cmn-Hans">
 <head>
     <meta charset="<?php $this->options->charset(); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit"> 
+    <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <?php if (!is_pjax()) { ?>
+    <?php } ?>
     <title><?php $this->archiveTitle(array(
             'category'  =>  _t('分类 %s 下的文章'),
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
-    <?php } ?>
     <!-- 使用url函数转换相关路径 -->
-
+   <?php if (!is_pjax()) { ?>
      <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
     <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
    	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
 <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php $this->options->themeUrl('jquery.pjax.js'); ?>" type="text/javascript" charset="utf-8"></script>
+<script src="<?php $this->options->themeUrl('jquery.lazyload.js'); ?>" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
@@ -47,7 +47,16 @@
         </div>
         </div>
         
-      
+  <!-- 加载动画 -->
+<div align="center" class="cssload-fond">
+	<div class="cssload-container-general">
+			<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_1"> </div></div>
+			<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_2"> </div></div>
+			<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_3"> </div></div>
+			<div class="cssload-internal"><div class="cssload-ballcolor cssload-ball_4"> </div></div>
+	</div>
+</div>
+
 <!--[if lt IE 8]>
     <div class="browsehappy" role="dialog"><?php _e('当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>'); ?>.</div>
 <![endif]-->

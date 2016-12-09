@@ -1,11 +1,10 @@
 html {
-	height: 100%;
+    height: 100%;
 }
-
 body {
 	position: relative;
-	min-height: 100%;
-	box-sizing: border-box;
+    min-height: 100%;
+    box-sizing: border-box;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -16,11 +15,7 @@ body {
 	padding: 0 0 84px 0;
 	margin: 0;
 }
-
-::selection {
-	background: rgba(58, 57, 56, 0.2)
-}
-
+::selection{background: rgba(58, 57, 56, 0.2)}
 ::-webkit-scrollbar {
 	width: 12px;
 	background: rgba(58, 57, 56, 0.2);
@@ -54,6 +49,7 @@ body {
 	padding: 15px 0 0 10px;
 }
 
+
 .down {
 	display: inline;
 	background-color: #b13c3c;
@@ -69,7 +65,89 @@ body {
 .down>a {
 	color: #fff;
 }
+/*loding*/
+.cssload-fond{
+    display:none;
+    position: fixed;
+    margin: auto;
+    top: 46%;
+    left: 46%;
+}
 
+.cssload-container-general
+{
+	animation:cssload-animball_two 1.15s infinite;
+		-webkit-animation:cssload-animball_two 1.15s infinite;
+	width:43px; height:43px;
+}
+.cssload-internal
+{
+	width:43px; height:43px; position:absolute;
+}
+.cssload-ballcolor
+{
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+}
+.cssload-ball_1, .cssload-ball_2, .cssload-ball_3, .cssload-ball_4
+{
+	position: absolute;
+	animation:cssload-animball_one 1.15s infinite ease;
+		-webkit-animation:cssload-animball_one 1.15s infinite ease;
+}
+.cssload-ball_1
+{
+	background-color:rgb(203,32,37);
+	top:0; left:0;
+}
+.cssload-ball_2
+{
+	background-color:rgb(248,179,52);
+	top:0; left:23px;
+}
+.cssload-ball_3
+{
+	background-color:rgb(0,160,150);
+	top:23px; left:0;
+}
+.cssload-ball_4
+{
+	background-color:rgb(151,191,13);
+	top:23px; left:23px;
+}
+
+
+
+
+
+@keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@-webkit-keyframes cssload-animball_one
+{
+	0%{ position: absolute;}
+	50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+	100%{ position: absolute;}
+}
+
+@keyframes cssload-animball_two
+{
+	0%{transform:rotate(0deg) scale(1);}
+	50%{transform:rotate(360deg) scale(1.3);}
+	100%{transform:rotate(720deg) scale(1);}
+}
+
+@-webkit-keyframes cssload-animball_two
+{
+	0%{-webkit-transform:rotate(0deg) scale(1);}
+	50%{-webkit-transform:rotate(360deg) scale(1.3);}
+	100%{-webkit-transform:rotate(720deg) scale(1);}
+}
 .range input {
 	overflow: hidden;
 	margin-top: 5px;
@@ -96,17 +174,12 @@ body {
 	-webkit-appearance: none;
 	border: 0
 }
-
 a {
 	color: #000;
 	text-decoration: none;
 	position: relative;
 }
-
-a:focus {
-	outline: none
-}
-
+a:focus{outline:none;}
 a:hover,a:active {
 	left: 3px;
 }
@@ -237,11 +310,9 @@ textarea {
 	margin: 5px 5px;
 	background-color: #fff;
 }
-
-.leftblog-menu a {
+.leftblog-menu a{
 	display: block;
 }
-
 .search-form {
 	height: 80%;
 	width: 220px;
@@ -281,6 +352,7 @@ textarea {
 
 .container {
 	margin-left: 20%;
+	
 }
 
 .container-main {
@@ -359,21 +431,18 @@ textarea {
 	color: #e4e4e4;
 }
 
-.post-near>.near {
+.post-near>.near{
 	display: inline-block;
-	background-color: rgb(80, 75, 75);
-	padding: 10px 20px;
-	border-radius: 8px;
+    background-color: rgb(80, 75, 75);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
-
-.post-near>.near-two {
+.post-near>.near-two{
 	float: right;
 }
-
-.post-near>.near>a {
+.post-near>.near>a{
 	color: #fff;
 }
-
 .archive-title {
 	position: relative;
 	top: -20px;
@@ -402,7 +471,7 @@ textarea {
 	padding: 0;
 	text-align: center;
 	background-color: rgba(238, 238, 238, 0.7);
-	border-radius: 6px;
+        border-radius: 6px;
 }
 
 .page-navigator li {
@@ -550,8 +619,8 @@ textarea {
 
 #footer {
 	position: absolute;
-	bottom: 0;
-	left: 0;
+    bottom: 0;
+    left: 0;
 	margin-left: 20%;
 	width: 80%;
 	background-color: rgba(238, 238, 238, 0.8);
@@ -564,7 +633,17 @@ textarea {
 	margin: 80px 0px;
 	padding: 20px 10px;
 	background-color: rgba(255, 255, 255, 0.74);
+
 }
+  .message{ display:none; padding: 10px; position: fixed; width: 230px; top: 40px; right: 4px; border-radius: 6px; background-color: rgba(145, 197, 197, 0.69);animation:messagein 1.5s;-webkit-animation:messagein 1.5s; }
+         @-webkit-keyframes messagein {
+             from {right:-400px; }
+             to {  }
+         }
+         @keyframes messagein {
+             from {right:-400px;  }
+             to {  }
+         }
 
 .post-content,.comment-content {
 	line-height: 1.5;
@@ -641,18 +720,15 @@ img.alignright {
 .invisible {
 	visibility: hidden;
 }
-
 @media (min-width:767px) {
-	.leftblog-menu {
+	.leftblog-menu{
 		display: block !important;
 	}
 }
-
 @media(max-width:767px) {
-	body {
-		padding: 0;
+	body{
+	    padding:0;
 	}
-
 	.blog-left {
 		float: none;
 		position: static;
@@ -692,7 +768,6 @@ img.alignright {
 		margin: 0px;
 		padding: 0px;
 	}
-
 	.post-wrap {
 		margin-bottom: 0px;
 	}
@@ -702,13 +777,15 @@ img.alignright {
 		margin-bottom: 0px;
 	}
 
+        .post-near{
+        display:none;
+        }
 	#footer {
 		margin-left: 0px;
 		width: 100%;
 		position: relative;
 	}
-
-	.hcset {
+	.hcset{
 		padding-top: 3px;
 	}
 }
