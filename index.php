@@ -1,10 +1,10 @@
 <?php
 /**
- *HAOTOWN NEWCITY1.2
+ *HAOTOWN NEWCITY1.3
  * 
  * @package Haotown Newcity Theme 
  * @author 疯狂减肥带
- * @version 1.2
+ * @version 1.3
  * @link http://www.haotown.cn
  */
 
