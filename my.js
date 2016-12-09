@@ -118,11 +118,6 @@ function hcswitch() {
 
 }
 
-$(function() {
-  $("img").lazyload({
-    effect: "fadeIn"
-  });
-});
 console.log("主题：NEWCITY 作者 疯狂减肥带 https://github.com/haocity/typecho-newcity/tree/master");
 
 function pajx_loadDuodsuo() {

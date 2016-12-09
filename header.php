@@ -22,7 +22,7 @@
    	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
 <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php $this->options->themeUrl('jquery.pjax.js'); ?>" type="text/javascript" charset="utf-8"></script>
-<script src="<?php $this->options->themeUrl('jquery.lazyload.js'); ?>" type="text/javascript" charset="utf-8"></script>
+
 	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
