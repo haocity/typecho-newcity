@@ -22,6 +22,37 @@
     </ul>
  
 </div><!-- end #main-->
-
+<script>
+var nearlink = pagenumber();
+function keyUp(e) {
+  var currKey = 0,
+  e = e || event;
+  currKey = e.keyCode || e.which || e.charCode;
+  if (nearlink) {
+    if (currKey == 37) {
+      if(nearlink.l){
+       nearlink.l.click();
+       sendmessage('向前一页进发');
+      }
+      else{
+       sendmessage('已经是最前页了');
+      }
+    }
+    if (currKey == 39 ) {
+      if(nearlink.n){
+       nearlink.n.click();
+       sendmessage('向后一页进发');
+      }
+      else{
+       sendmessage('后面没有了');
+          }
+      
+    }
+  }
+}
+if (nearlink) {
+  document.onkeyup = keyUp;
+}
+</script>
 
 <?php $this->need('footer.php'); ?>

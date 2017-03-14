@@ -1,39 +1,10 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<script>
-var nearlink = pagenumber();
-function keyUp(e) {
-  var currKey = 0,
-  e = e || event;
-  currKey = e.keyCode || e.which || e.charCode;
-  if (nearlink) {
-    if (currKey == 37) {
-      if(nearlink.l){
-       nearlink.l.click();
-       sendmessage('向前一页进发');
-      }
-      else{
-       sendmessage('已经是最前页了');
-      }
-    }
-    if (currKey == 39 ) {
-      if(nearlink.n){
-       nearlink.n.click();
-       sendmessage('向后一页进发');
-      }
-      else{
-       sendmessage('后面没有了');
-          }
-      
-    }
-  }
-}
-if (nearlink) {
-  document.onkeyup = keyUp;
-}
-</script>
+
         </div><!-- end .row -->
     </div>
 </div><!-- end #body -->
+<div class="nextpage"></div>
+
 <?php if (!is_pjax()) { ?>
 <footer id="footer" role="contentinfo">
     &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
@@ -50,21 +21,19 @@ if (nearlink) {
 <div class='message'></div>
 </footer>
 <script>
- $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])',   //jquery选择器，监听所有不含nopjax属性的a元素，触发pjax。
- '#container',                         //jquery选择器，存放页面内容的元素。
+ $(document).pjax('a[href^="<?php Helper::options()->siteUrl()?>"]:not(a[target="_blank"], a[no-pjax])',   
+ '#container',
  {                     
- timeout:30000}); 
+ timeout:30000,scrollTo:0}); 
 $(document).on('pjax:send', function() {
-console.log('发送ajax请求');$('.cssload-fond').show();
+$('.cssload-fond').show();
+$('.nextpage').remove();
  });
  $(document).on('pjax:complete', function() {
 $('.cssload-fond').hide();
-pajx_loadDuodsuo();
- 
  });
 </script>
 <?php $this->footer(); ?>
-
 </body>
 </html>
 <?php } ?>

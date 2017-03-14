@@ -3,12 +3,12 @@ body{position:relative;box-sizing:border-box;margin:0;padding:0 0 84px;min-heigh
 ::selection{background:rgba(58,57,56,.2)}
 ::-webkit-scrollbar{width:9pt;background:rgba(58,57,56,.2)}
 ::-webkit-scrollbar-thumb{background:rgba(58,57,56,.62)}
-#oneimg{background-size:cover;background-repeat:no-repeat}
+#oneimg{background-size:cover;background-repeat:no-repeat;}
 .changerimg{position:fixed;right:5px;bottom:20px;z-index:6;cursor:pointer}
 #oneimgmenu{display:none;border-radius:8px;background-color:rgba(255,253,253,.34);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff, endColorstr=#66ffffff)}
 .hcset{padding:15px 0 0 10px}
-.down{display:inline;margin:10px 5px;padding:5px 10px;border-radius:5px;background-color:#b13c3c;box-shadow:1px 1px 5px #b5b5b5;text-align:center}
-.down,.down>a{color:#fff}
+.look{display:inline;margin:10px 5px;padding:5px 10px;border-radius:5px;background-color:#d07878;box-shadow:1px 1px 5px #b5b5b5;text-align:center}
+.look,.look>a{color:#fff}
 .cssload-fond{position:fixed;top:46%;left:46%;display:none;margin:auto}
 .cssload-container-general{width:43px;height:43px;animation:cssload-animball_two 1.15s infinite;-webkit-animation:cssload-animball_two 1.15s infinite}
 .cssload-internal{position:absolute;width:43px;height:43px}
@@ -50,7 +50,7 @@ table th{background:#f3f3f3}
 h1,h2,h3,h4,h5,h6{font-family:Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif}
 input[type=email],input[type=password],input[type=text],input[type=url],textarea{box-sizing:border-box;padding:5px;width:100%;border:1px solid #e9e9e9;border-radius:2px}
 textarea{resize:vertical}
-.blog-left{position:fixed;top:0;left:0;overflow:hidden;padding-top:8%;width:20%;height:100%;background-color:rgba(58,57,56,.62);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C82168E7, endColorstr=#C82168E7)}
+.blog-left{position:fixed;top:0;left:0;overflow:hidden;padding-top:8%;width:20%;height:100%;background-color:rgba(58,57,56,.62);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C83a3938, endColorstr=#C83a3938)}
 .content{margin-left:25pc}
 .leftlogo{text-align:center}
 .leftlogoimg{width:75pt;height:75pt;border-radius:50%}
@@ -70,7 +70,7 @@ textarea{resize:vertical}
 .comment-content a:hover,.post-content a:hover,.post-meta a:hover,.widget a:hover{border-bottom-color:transparent}
 .browsehappy{padding:8px 0;background:#fbe3e4;color:#8a1f11;text-align:center}
 .browsehappy a{color:#8a1f11;text-decoration:underline;font-weight:700}
-.post{margin-bottom:40px;padding:20px 5.5%;border-radius:10px}
+.post{margin-bottom:40px;padding:20px 5.5%;border-radius:10px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCDFFFFFF)}
 .post-title{font-weight:400;font-size:2.25em;line-height:120%}
 .post-meta{margin-top:-.5em;padding:0;padding-bottom:10px;border-bottom:3px double #d4d4d4;font-size:.92857em}
 .post-meta,.post-meta a{color:#716d6d}
@@ -91,7 +91,7 @@ textarea{resize:vertical}
 .page-navigator a{display:inline-block;padding:0 10px;height:30px;line-height:30px}
 .page-navigator a:hover{background:#eee;text-decoration:none}
 .page-navigator .current a{background:#eee;color:#444}
-#comments{padding:20px}
+#comments{padding:20px;min-height:200px;border-radius:4px;}
 .comment-list,.comment-list ol{margin:0;padding:0;list-style:none}
 .comment-list li{margin-top:10px;padding:14px;border:1px solid #eee}
 .comment-list li.comment-level-odd{background:#f6f6f3}
@@ -115,7 +115,7 @@ textarea{resize:vertical}
 .widget-list{padding:0;list-style:none}
 .widget-list li{margin:5px 0;line-height:1.6}
 .widget-list li ul{margin-left:15px}
-#footer{position:absolute;bottom:0;left:0;margin-left:20%;width:80%;background-color:hsla(0,0%,93%,.8);color:#777;text-align:center;line-height:40px}
+#footer{position:absolute;bottom:0;left:0;margin-left:20%;width:80%;background-color:hsla(0,0%,93%,.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);color:#777;text-align:center;line-height:40px;overflow: hidden;}
 .error-page{margin:5pc 0;padding:20px 10px;background-color:hsla(0,0%,100%,.74)}
 .message{position:fixed;top:40px;right:4px;display:none;padding:10px;width:230px;border-radius:6px;background-color:rgba(145,197,197,.69);animation:messagein 1.5s;-webkit-animation:messagein 1.5s}
 @keyframes messagein{0%{right:-25pc}
@@ -149,3 +149,4 @@ img.alignright{margin:0 0 0 15px}
 #footer{position:relative;margin-left:0;width:100%}
 .hcset{padding-top:3px}
 }
+.firstRow{background-color: rgba(125, 212, 156, 0.65);}

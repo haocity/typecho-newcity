@@ -1,2 +1,12 @@
 .post{background-color:rgba(255, 255, 255, 0.41);}
-#comments {background-color: rgba(255, 255, 255, 0.41);}
+#comments {background-color: rgba(255, 255, 255, 0.41);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);}
+.head-img-w{top: 14px!important;}
+.header-login{border:0!important}
+.post-wrap-main{border: 1px solid #878787!important;border-radius: 8px!important;padding:2px!important;    background: #fdfdfd bottom right 20px no-repeat url(https://www.haotown.cn/changyan/3.png)!important;}
+.login-instruction,.login-logo-phone,.phone-login,.split-hr,.prop-span,.post-wrap-border-l,.post-wrap-border-r,.post-wrap-border-t,.post-wrap-border-b{display:none!important;}
+.wrap-name-w{ bottom: 20px!important;}
+.btn-fw{background-image: url(https://www.haotown.cn/changyan/1.png)!important}
+.build-floor-gw{background-color: rgba(255, 255, 255, 0.55)!important;}
+.cy-logo{height:64px!important}
+.changyan-login-dialog-wrapper{height: auto!important; padding: 10px 0!important;border-radius: 30px!important;}
+.module-cmt-footer{display: none!important;}

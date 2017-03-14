@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
    	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
-<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="<?php $this->options->themeUrl('jquery.pjax.js'); ?>" type="text/javascript" charset="utf-8"></script>
 
 	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
@@ -91,7 +91,7 @@
          	<ul class="leftblog-menu" id="leftblog-menu">
         
            <li><a href="<?php $this->options->siteUrl(); ?>"><?php _e('首页'); ?></a></li>
-          
+ 
 <!--分类菜单-->        
 <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
 <?php while ($category->next()): ?>
@@ -99,7 +99,6 @@
 <?php endwhile; ?>
 
 </li>
-
 <!--页面菜单-->     
  <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
           <?php while($pages->next()): ?>

@@ -30,6 +30,49 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
     <?php $this->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
 </div><!-- end #main-->
-
-
+<script>
+ var ajaxloading=true;
+  $(window).scroll(function() {
+    if (ajaxloading) {
+      var pagedz = window.location.pathname;
+      if (pagedz == "/" || pagedz.indexOf('/page/') == 0||pagedz.indexOf('/category/')==0) {
+        var url = $('.next:last>a').attr('href');
+        if (url&&url!=document.location.href) {
+          var scrollTop = $(this).scrollTop();
+          var scrollHeight = $(document).height();
+          var windowHeight = $(this).height();
+          if (scrollTop + windowHeight == scrollHeight) {
+            ajaxloading=false;
+            $('.cssload-fond').show();
+            $.ajax({
+              url: url,
+              dataType: 'html',
+              timeout: 5000,
+              beforeSend: function(xhr) {
+                xhr.setRequestHeader('X-PJAX', 'true')
+              },
+              success: function(data) {
+                console.log('ok');
+                ajaxloading=true;
+                $('.nextpage:last').html(data);
+                var state = {
+                  title: document.title,
+                  url: url,
+                };
+                window.history.pushState(null, document.title, url);
+                $('.page-navigator:first').remove();
+                $('.cssload-fond').hide();
+              },
+              error: function(data) {
+                console.log("eero" + data);
+                sendmessage('ajax失败');
+                $('.cssload-fond').hide();
+              }
+            })
+          }
+        }
+      };
+     };
+});
+</script>
 <?php $this->need('footer.php'); ?>

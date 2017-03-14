@@ -35,11 +35,11 @@ window.onload = function() {
 
   if (Bcookie.oneimg == "") {
     //console.log("没找到cookie")
-    Bcookie.postbg = 72; //默认透明度
+    Bcookie.postbg = 82; //默认透明度
     document.cookie = "postbg=" + Bcookie.postbg + ";path=/";
     Bcookie.bgcolor = document.getElementById("hccolor").value;
     document.cookie = "bgcolor=" + Bcookie.bgcolor + ";path=/";
-    Bcookie.oneimg = 1604; //默认壁纸编号
+    Bcookie.oneimg = 2971; //默认壁纸编号
     document.cookie = "oneimg=" + Bcookie.oneimg + ";path=/";
     Bcookie.bgcolorswitch = "false";
     document.cookie = "bgcolorswitch=" + Bcookie.bgcolorswitch + ";path=/";
@@ -75,7 +75,7 @@ function ChangerImg() {
 }
 
 function DownImg() {
-  window.open("https://app.haotown.cn/img.html?img=" + Bcookie.oneimg);
+  window.open("https://oneimg.haotown.cn/img.html?img=" + Bcookie.oneimg);
 }
 
 function hcchangercolor() {
@@ -162,3 +162,4 @@ function pagenumber() {
     }
   }
 }
+
