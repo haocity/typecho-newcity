@@ -62,6 +62,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
                 window.history.pushState(null, document.title, url);
                 $('.page-navigator:first').remove();
                 $('.cssload-fond').hide();
+				Rainbow.color();
               },
               error: function(data) {
                 console.log("eero" + data);

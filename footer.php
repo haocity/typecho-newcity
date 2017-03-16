@@ -31,6 +31,7 @@ $('.nextpage').remove();
  });
  $(document).on('pjax:complete', function() {
 $('.cssload-fond').hide();
+Rainbow.color();
  });
 </script>
 <?php $this->footer(); ?>
