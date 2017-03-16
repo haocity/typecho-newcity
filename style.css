@@ -1,8 +1,8 @@
 html{height:100%}
 body{position:relative;box-sizing:border-box;margin:0;padding:0 0 84px;min-height:100%;background-color:#fff;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;color:#444;font-size:87.5%;font-family:Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif}
-::selection{background:rgba(58,57,56,.2)}
-::-webkit-scrollbar{width:9pt;background:rgba(58,57,56,.2)}
-::-webkit-scrollbar-thumb{background:rgba(58,57,56,.62)}
+::selection{background:rgba(255,57,56,.2)}
+::-webkit-scrollbar{width:9pt;background:rgba(255,57,56,.2)}
+::-webkit-scrollbar-thumb{background:rgba(255,57,56,.62)}
 #oneimg{background-size:cover;background-repeat:no-repeat}
 .changerimg{position:fixed;right:5px;bottom:20px;z-index:6;cursor:pointer}
 #oneimgmenu{display:none;border-radius:8px;background-color:rgba(255,253,253,.34);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff, endColorstr=#66ffffff)}
