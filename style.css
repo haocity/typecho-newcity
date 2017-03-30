@@ -1,9 +1,12 @@
 html{height:100%}
 body{position:relative;box-sizing:border-box;margin:0;padding:0 0 84px;min-height:100%;background-color:#fff;background-size:cover;background-repeat:no-repeat;background-attachment:fixed;color:#444;font-size:87.5%;font-family:Avenir Next,Helvetica,Arial,Lantinghei SC,Microsoft YaHei,sans-serif}
 ::selection{background:rgba(255,57,56,.2)}
-::-webkit-scrollbar{width:9pt;background:rgba(255,57,56,.2)}
-::-webkit-scrollbar-thumb{background:rgba(255,57,56,.62)}
-#oneimg{background-size:cover;background-repeat:no-repeat}
+::-webkit-scrollbar{width:9pt;background:rgba(58,57,56,.2)}
+::-webkit-scrollbar-thumb{background:rgba(58,57,56,.62)}
+pre::-webkit-scrollbar{width:9pt;background:rgba(58,57,56,.8)}
+pre::-webkit-scrollbar-thumb{background:rgba(255,255,255,.62)}
+tr:first-child {background-color: #A2D5E4;}
+#oneimg{position:absolute;height:100%;width:100%;background-size:cover;background-repeat:no-repeat}
 .changerimg{position:fixed;right:5px;bottom:20px;z-index:6;cursor:pointer}
 #oneimgmenu{display:none;border-radius:8px;background-color:rgba(255,253,253,.34);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66ffffff, endColorstr=#66ffffff)}
 .hcset{padding:15px 0 0 10px}
@@ -101,8 +104,8 @@ textarea{resize:vertical}
 .browsehappy{padding:8px 0;background:#fbe3e4;color:#8a1f11;text-align:center}
 .browsehappy a{color:#8a1f11;text-decoration:underline;font-weight:700}
 .post{margin-bottom:40px;padding:20px 5.5%;border-radius:10px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF, endColorstr=#CCDFFFFFF)}
-.post-title{font-weight:400;font-size:2.25em;line-height:120%}
-.post-meta{margin-top:-.5em;padding:0;padding-bottom:10px;border-bottom:3px double #d4d4d4;font-size:.92857em}
+.post-title{margin: 12px 0;font-weight:400;font-size:2.25em;line-height:120%}
+.post-meta{margin-top:-.5em;padding:0;font-size:.92857em}
 .post-meta,.post-meta a{color:#716d6d}
 .post-meta li{display:inline-block;margin:0 8px 0 0;padding-left:9pt}
 .post-meta li:first-child{margin-left:0;padding-left:0;border:none}

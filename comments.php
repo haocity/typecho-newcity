@@ -2,7 +2,7 @@
 <div id="comments">
 <div id="SOHUCS" sid="<?php echo $this->cid;?>" ></div>
 <script type="text/javascript"> 
-(function() {
+    (function() {
     var appid = "cyrgvDe53";
     var conf = "prod_1db778e303b460b3817e26d6c0b3621d";
     var loadJs = function(d, a) {

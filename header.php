@@ -16,14 +16,11 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <!-- 使用url函数转换相关路径 -->
    <?php if (!is_pjax()) { ?>
+	<script  src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
-    <link rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
+    <link async rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
    	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
-	<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php $this->options->themeUrl('jquery.pjax.js'); ?>" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php $this->options->themeUrl('my.js'); ?>" type="text/javascript" charset="utf-8"></script>
-	<script src="<?php $this->options->themeUrl('code.js'); ?>" type="text/javascript" charset="utf-8"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -32,21 +29,7 @@
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
-<body id="oneimg">
-  <div class="changerimg" onmousemove="showoneimg()" onmouseout="hideoneimg()" onclick="showoneimg()">
-        <img  id="oneimgmenuimg" src="<?php $this->options->themeUrl('img/imgmenu.png'); ?>" style="width: 70px;">
-        	
-        <div id="oneimgmenu">
-        	 <div class="hcset">
-			     <p><input type="checkbox" id="hccolorswitch" onclick="hcswitch()" >背景颜色<input type="color" id="hccolor" value="#ffffff" /> </p>
-			     <p id='hctmd' class="range">透明度 <input type="range" name="points" min="0" max="100"  id="hcsetrange" onmouseup="hcchangerrange()" onmouseout="hcchangerrange()" style="width: 70px;"/> </p>
-      		 </div>
-            <img src="<?php $this->options->themeUrl('img/imgdown.png'); ?>" title="下载/评论图片" style="width: 70px;"   onclick="DownImg()">    
-			<img src="<?php $this->options->themeUrl('img/imgchanger.png'); ?>" title="更换图片" style="width: 70px;" onclick="ChangerImg()"> 
-			  
-        </div>
-        </div>
-        
+<body>  
   <!-- 加载动画 -->
 <div align="center" class="cssload-fond">
 	<div class="cssload-container-general">
@@ -71,8 +54,7 @@
 			     <?php endif; ?>
 			     </a>
 			     <div class="leftlogotitle notextlink">
-			     	
-			     	<a href="<?php $this->options->siteUrl(); ?>" title="<?php $this->options->title() ?>" rel="home"><?php $this->options->title() ?></a>
+			     	<a href="<?php $this->options->siteUrl(); ?>" rel="home" title="<?php $this->options->title();?>"><?php $this->options->title();?></a>
 					<br>
 					<form method="post" class="search-form" action="./">
 						<input placeholder="let's search" onfocus="if(this.value=='let's search')this.value='';" onblur="if(this.value=='')this.value='search';" name="s" id="s" type="search"> 

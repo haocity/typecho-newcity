@@ -23,6 +23,7 @@
  
 </div><!-- end #main-->
 <script>
+$(document).ready(function() {
 var nearlink = pagenumber();
 function keyUp(e) {
   var currKey = 0,
@@ -46,13 +47,12 @@ function keyUp(e) {
       else{
        sendmessage('后面没有了');
           }
-      
     }
   }
 }
 if (nearlink) {
   document.onkeyup = keyUp;
-}
+}});
 </script>
 
 <?php $this->need('footer.php'); ?>
