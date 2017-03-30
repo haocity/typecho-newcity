@@ -33,6 +33,8 @@ function themeConfig($form) {
     $form->addInput($socialgithub);
     $socialsteam = new Typecho_Widget_Helper_Form_Element_Text('socialsteam', NULL, NULL, _t('输入Steam链接'), _t('在这里输入steam链接,留空则不显示'));
     $form->addInput($socialsteam);
+    $sitename = new Typecho_Widget_Helper_Form_Element_Text('sitename', NULL, NULL, _t('输入站点名称'), _t('在这里输入左侧显示的站点名称 留空则显示基本设置中的站点名称'));
+    $form->addInput($sitename);
 
 }
 

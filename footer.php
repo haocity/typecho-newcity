@@ -50,9 +50,7 @@ $('.cssload-fond').show();
 $('.nextpage').remove();
  });
  $(document).on('pjax:complete', function() {
-console.log('ajax');
 $('.cssload-fond').hide();
-console.log('ajax end');
 if(typeof(Rainbow)!=="undefined") {Rainbow.color()};
  });
 </script>

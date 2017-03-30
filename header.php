@@ -48,13 +48,13 @@
 			<aside class="leftlogo">
 				<a href="<?php $this->options->siteUrl(); ?>" title="<?php $this->options->title() ?>" rel="home" class="leftlogo">
 					   <?php if ($this->options->logoUrl): ?>
-			     		<img class="leftlogoimg" src="<?php $this->options->logoUrl; ?>">
+			     		<img class="leftlogoimg" src="<?php $this->options->logoUrl(); ?>">
 			     	<?php else: ?>
 			     	<img class="leftlogoimg" src="<?php $this->options->themeUrl("img/logo.png"); ?>">
 			     <?php endif; ?>
 			     </a>
 			     <div class="leftlogotitle notextlink">
-			     	<a href="<?php $this->options->siteUrl(); ?>" rel="home" title="<?php $this->options->title();?>"><?php $this->options->title();?></a>
+			     	<a href="<?php $this->options->siteUrl(); ?>" rel="home" title="<?php $this->options->title();?>"><?php if($this->options->sitename){$this->options->sitename();}else{$this->options->title();}?></a>
 					<br>
 					<form method="post" class="search-form" action="./">
 						<input placeholder="let's search" onfocus="if(this.value=='let's search')this.value='';" onblur="if(this.value=='')this.value='search';" name="s" id="s" type="search"> 
@@ -79,8 +79,8 @@
 <?php while ($category->next()): ?>
 <li><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
 <?php endwhile; ?>
-
 </li>
+
 <!--页面菜单-->     
  <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
           <?php while($pages->next()): ?>
