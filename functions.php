@@ -33,8 +33,11 @@ function themeConfig($form) {
     $form->addInput($socialgithub);
     $socialsteam = new Typecho_Widget_Helper_Form_Element_Text('socialsteam', NULL, NULL, _t('输入Steam链接'), _t('在这里输入steam链接,留空则不显示'));
     $form->addInput($socialsteam);
-    $sitename = new Typecho_Widget_Helper_Form_Element_Text('sitename', NULL, NULL, _t('输入站点名称'), _t('在这里输入左侧显示的站点名称 留空则显示基本设置中的站点名称'));
+    $sitename = new Typecho_Widget_Helper_Form_Element_Text('sitename', NULL, NULL, _t('输入站点左侧名称'), _t('在这里输入左侧显示的站点名称 留空则显示基本设置中的站点名称'));
     $form->addInput($sitename);
+
+    $customnav = new Typecho_Widget_Helper_Form_Element_Textarea('customnav', NULL, NULL, _t('输入自定义菜单'), _t('在这里输入新的菜单栏 格式&lt;li&gt;&lt;a href="http://app.haotown.cn/"&gt;项目&lt;/a&gt;&lt;/li&gt; '));
+    $form->addInput($customnav);
 
 }
 

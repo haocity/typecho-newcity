@@ -79,8 +79,9 @@
 <?php while ($category->next()): ?>
 <li><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
 <?php endwhile; ?>
-</li>
 
+</li>
+<?php if($this->options->customnav){$this->options->customnav();} ?>
 <!--页面菜单-->     
  <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
           <?php while($pages->next()): ?>

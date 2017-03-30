@@ -1,5 +1,5 @@
 .post{background-color:rgba(255, 255, 255, 0.7);}
-#comments {background-color: rgba(255, 255, 255, 0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);}
+#comments{background-color:rgba(255,255,255,0.8);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BFFFFFFF,endColorstr=#BFFFFFFF);}
 .head-img-w{top: 14px!important;}
 .header-login{border:0!important}
 .post-wrap-main{border: 1px solid #878787!important;border-radius: 8px!important;padding:2px!important;    background: #fdfdfd bottom right 20px no-repeat url(https://www.haotown.cn/changyan/3.png)!important;}
