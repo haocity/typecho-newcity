@@ -41,6 +41,7 @@ to{-webkit-transform:rotate(720deg) scale(1)}
 a{position:relative;color:#000;text-decoration:none}
 a:focus{outline:0}
 a:active,a:hover{left:3px}
+a.leftlogo:hover{left:0}
 li,ul{margin:0;padding:0}
 code{padding:2px 4px}
 @keyframes fade-in{0%{opacity:0}
@@ -87,6 +88,7 @@ textarea{resize:vertical}
 .content{margin-left:25pc}
 .leftlogo{text-align:center}
 .leftlogoimg{width:75pt;height:75pt;border-radius:50%}
+.leftlogoimg:hover{animation: dou .3s 5;}
 .leftlogotitle a,.leftnav a{color:#fff;text-decoration:none}
 .leftlogotitle{margin-bottom:40px;font-size:2em}
 .leftblog-menu>li{list-style-type:none;text-align:center;font-size:1.5em}
@@ -183,3 +185,4 @@ img.alignright{margin:0 0 0 15px}
 .hcset{padding-top:3px}
 }
 .firstRow{background-color:rgba(125,212,156,.65)}
+@keyframes dou{25% {transform: rotate(10deg)}0% {transform: rotate(0deg)}75% {transform: rotate(-10deg)}100% {transform: rotate(0deg)}}
