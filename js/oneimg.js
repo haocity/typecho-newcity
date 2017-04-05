@@ -17,7 +17,7 @@ $(document).ready(function() {
         document.cookie = "postbg=" + Oneimg.postbg + ";path=/";
         Oneimg.bgcolor = $d("hccolor").value;
         document.cookie = "bgcolor=" + Oneimg.bgcolor + ";path=/";
-        Oneimg.oneimg = 2266;
+        Oneimg.oneimg = 2695;
         document.cookie = "oneimg=" + Oneimg.oneimg + ";path=/";
         Oneimg.bgcolorswitch = "false";
         document.cookie = "bgcolorswitch=" + Oneimg.bgcolorswitch + ";path=/";
