@@ -46,7 +46,7 @@
 <header class="blog-left" id="blog-left">
 			
 			<aside class="leftlogo">
-				<a href="<?php $this->options->siteUrl(); ?>" title="<?php $this->options->title() ?>" rel="home" class="leftlogo">
+				<a href="<?php $this->options->siteUrl(); ?>" rel="home" class="leftlogo">
 					   <?php if ($this->options->logoUrl): ?>
 			     		<img class="leftlogoimg" src="<?php $this->options->logoUrl(); ?>">
 			     	<?php else: ?>
