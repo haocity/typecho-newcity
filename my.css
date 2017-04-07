@@ -10,3 +10,7 @@
 .cy-logo{height:64px!important}
 .changyan-login-dialog-wrapper{height: auto!important; padding: 10px 0!important;border-radius: 30px!important;}
 .module-cmt-footer{display: none!important;}
+.nt-item[data-alias=hots],.nt-item[data-alias=history],.nt-item[data-alias=task]{display: none!important;}
+
+
+.type-list.active{background-image: none!important; background-color: #424141!important;border-radius: 5px 5px 0 0;color: #fff!important;}
