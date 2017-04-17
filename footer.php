@@ -22,8 +22,7 @@
             <?php if ($this->options->socialsteam): ?>
                 <a class="iconfont icon-steam" target="_blank" href="<?php $this->options->socialsteam(); ?>"></a>
             <?php endif; ?>
-         	<!--<a class="iconfont icon-tuitet" target="_blank"  href="https://twitter.com/haocity"></a> -->
-         	<!--<a class="iconfont icon-weixin" target="_blank"  href="#"></a>-->
+         	
          	
          </div>
 <div class='message'></div>
