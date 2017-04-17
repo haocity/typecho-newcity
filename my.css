@@ -15,4 +15,4 @@
 
 .type-list.active{background-image: none!important; background-color: #424141!important;border-radius: 5px 5px 0 0;color: #fff!important;}
 .iconfont{font-size:24px;color: rgb(103, 99, 101);}
-.smallicon{font-size:15px;}
+.smallicon{font-size:15px;padding-right:4px}
