@@ -17,15 +17,14 @@
     <!-- 使用url函数转换相关路径 -->
    <?php if (!is_pjax()) { ?>
 	<script  src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
     <link async rel="stylesheet" href="//cdnjscn.b0.upaiyun.com/libs/normalize/2.1.3/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-   	<link rel="stylesheet" href="<?php $this->options->themeUrl('icofont/iconfont.css'); ?>">
+   	<link rel="stylesheet" href="https://at.alicdn.com/t/font_hvjkg3322c323xr.css">
     <!--[if lt IE 9]>
     <script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
     <script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
+   <link rel="stylesheet" href="<?php $this->options->themeUrl('my.css'); ?>">
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
 </head>
