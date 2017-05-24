@@ -61,7 +61,7 @@ function getCookie(Name) {
 }
 
 function ChangerImg() {
-    Oneimg.oneimg = Math.round(Math.random() * 4358);
+    Oneimg.oneimg = Math.round(Math.random() * 6534);
     document.cookie = "oneimg=" + Oneimg.oneimg + ";path=/";
     Oneimg.url = "https://t4.haotown.cn/img/bj@" + Oneimg.oneimg + ".jpg";
     Oneimg.elebg.style.backgroundImage = "url(" + Oneimg.url + ")";
